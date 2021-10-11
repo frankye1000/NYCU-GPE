@@ -1,34 +1,30 @@
 //10460:You can say 11
 #include<iostream>
+#include <string>
 using namespace std;
+
 int main(){
 	// a锣Θchar/string
 	// 计竚计㎝-案计竚计㎝11计
 	
-	int n;
-	while( cin >> n ){
-		if(n==0) break;
-		int a = n;
+	string num;
+	while( getline(cin, num)){
+		if(num=="0"){
+			break;
+		}
+
 		int evenid_sum = 0;
 		int oddid_sum = 0;
-		int id = 0;
-		while(a != 0){
-			
-			int r = a%10;  //緇计
-			
-			if(id%2==0){
-				evenid_sum += r;
-			}else{
-				oddid_sum += r;
-			}
-			a = a/10;
-			id += 1;		
+		for(int i = 0; i < num.length();i++){
+			int n = num[i]-'0';
+			if(i%2==0) evenid_sum += n;
+			else oddid_sum += n;
 		}
 		
 		if((evenid_sum-oddid_sum)%11==0){
-			cout<<n<<" is a multiple of 11."<<endl;
+			cout<<num<<" is a multiple of 11."<<endl;
 		}else{
-			cout<<n<<" is not a multiple of 11."<<endl;
+			cout<<num<<" is not a multiple of 11."<<endl;
 		}
 			
 		}

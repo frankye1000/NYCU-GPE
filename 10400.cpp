@@ -23,17 +23,19 @@ int main(){
 	//要一個計數器計算長度
 	//一直更新最大長度
 	int n,e,c;
-	cin >> n >> e;
-	
-	int maxc=1;
-	for(int i=n; i<=e; i++){
-		c=count(i);
-		if(maxc<c){
-			maxc=c;	
+	while(cin >> n >> e){
+		int maxc=1;
+		for(int i=n; i<=e; i++){
+			c=count(i);
+			if(maxc<c){
+				maxc=c;	
+			}
 		}
-		
+		cout<<maxc<<" "<< n <<" "<<e;
 	}
-	return maxc;
+	
+	
+	return 0;
 }
 
 
