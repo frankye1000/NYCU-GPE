@@ -1,6 +1,6 @@
 //10405:Jolly Jumpers
 
-//§â®t­È°O°_¨Ó
+//ï¿½ï¿½tï¿½È°Oï¿½_ï¿½ï¿½
 #include<iostream>
 using namespace std;
 
@@ -8,18 +8,18 @@ int main(){
 	int n,JS=0,trueS=0;
 	cin >> n;
 	int temp[n]={0};
-	//¥ý§â¸ê®Æ¦s¶i¤@­Óarray 
+	//ï¿½ï¿½ï¿½ï¿½ï¿½Æ¦sï¿½iï¿½@ï¿½ï¿½array 
 	for(int i=1; i<=n ; i++){
 		cin >> temp[i];
 	}
-	//­pºâ®t­È¨Ã¥[°_¨Ó 
+	//ï¿½pï¿½ï¿½tï¿½È¨Ã¥[ï¿½_ï¿½ï¿½ 
 	for(int i=2; i<=n ; i++){
 		int f = temp[i]-temp[i-1];
 		if(f < 0) JS+=(-f);
 		else JS+=f;
 		
 	}
-	//¯u­È 
+	//ï¿½uï¿½ï¿½ 
 	for(int j=1; j<=n-1; j++){
 		trueS += j;
 	}
