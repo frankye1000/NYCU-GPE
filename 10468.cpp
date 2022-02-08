@@ -14,7 +14,7 @@ int main()
         long long int max=0;   
         for(int i=0;i<n;i++)
         {   
-            int temp=s[i];
+            long long int temp=s[i];
             if(temp>max) max=temp;
             for(int j=i+1;j<n;j++)
             {
@@ -22,20 +22,10 @@ int main()
                 if(temp>max) max=temp;
             }
         }
-        cout<<"Case #"<<ca<<": The maximum product is "<<max<<endl;
+        cout<<"Case #"<<ca<<": The maximum product is "<<max<<"."<<endl<<endl;
         ca+=1;
     }
     
-
-
-
-
-
-
-
-
-
-
     return 0;
 }
 

@@ -11,7 +11,7 @@ int main()
     string s1, s2;
 
     cin>>n ; //輸入測資數量
-    for(int t=1; t<=n; t++)
+    for(t=1; t<=n; t++)
     {
         cin>>s1>>s2; //輸入測資
         cout<<"Pair #"<<t<<": "; //照格式輸出
