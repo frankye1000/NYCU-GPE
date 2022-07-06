@@ -1,3 +1,4 @@
+/* a158: 11827 - Maximum GCD */
 #include<iostream>
 #include<string>
 #include<sstream>
@@ -21,22 +22,19 @@ int GCD(int a, int b){
 
 }
 
-
-
 int main(){
     int n;
-    cin>>n;
+    (cin>>n).get();
     //cin one string
+    //getline() 每次讀入資料時會讀到換行符號 (newline character) 才停止
     string s;
-    getline(cin, s); //getline() 每次讀入資料時會讀到換行符號 (newline character) 才停止
-    for(int h=0;h<n;h++){
+    for(int h=0; h<n; h++){
         getline(cin, s);
-        //use stringstream split string, have create one temp string to store.
-        stringstream ss(s);    
+        stringstream ss(s);      //use stringstream split string, have create one temp string to store.
         int t;
-        int A[100]={},index=0;
+        int A[100]={}, index=0;
             
-        while(ss>>t){
+        while(ss>>t){           // 使用這樣的方法，就可以將字串依照空格分割
             A[index]=t;
             index++;
         }
