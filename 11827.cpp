@@ -49,9 +49,5 @@ int main(){
         cout<<maxGCD<<endl;
          
     }
-
- 
-
-
     return 0;
 }
