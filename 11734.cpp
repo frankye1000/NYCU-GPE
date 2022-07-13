@@ -17,7 +17,7 @@ int main(){
         else{
             stringstream ss(s);
             string temp, fi;
-            while(getline(ss, temp, ' ')){
+            while(ss >> temp){
                 fi += temp;
             }
             if(fi==t) cout<<"Case "<<i<<": Output Format Error"<<endl;
